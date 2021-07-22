@@ -1,0 +1,24 @@
+Hooks:
+    -	Hooks are the functions which "hook into" React state and lifecycle features from        
+            function  components	.
+    -	React offers a number of built-in Hooks. A few of these include  useState(),    
+         useEffect(),  useContext(), useReducer(),    and useRef() 
+
+Rules:
+    -   Never call Hooks from inside a loop, condition or nested function
+    -   Hooks should sit at the top-level of your component
+    -   Only call Hooks from React functional components
+    -   Never call a Hook from a regular function
+    -   Hooks can call other Hooks
+
+usecallback:
+    -   useCallback will return a memoized/remember  version of the callback that only changes 
+        if one of the dependencies has changed. 
+    -	This is useful when passing callbacks to optimized child components that 
+        rely on reference equality to prevent unnecessary renders .
+    -   useCallback returns a memoized callback.
+    -   If you don’t pass an array, this will return a new value on every call.
+
+syntax:
+    const memoizedCallback = useCallback(function, arrayDependency)
+
